@@ -54,7 +54,6 @@ a {
 
 .swiper-container {
     width: 100%;
-    z-index: -1 !important;
   }
 
   .slide-img {
@@ -139,6 +138,7 @@ a {
     display: flex;
     flex-direction: column;
     top: 105%;
+    z-index: 2;
     display: none;
   }
 
