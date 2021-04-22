@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.swiper-container {
+    width: 100%;
+    z-index: -1 !important;
+  }
+
+  .slide-img {
+    width: 100%;
+  }
+
+  header .head {
+    background: #F6F6F6;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  header .head a {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  header .head a:nth-child(1) {
+    color: #4460A0;
+  }
+
+  header .head a:nth-child(2) {
+    color: #00AAEC;
+  }
+
+  header .head a:before {
+    padding-right: 8px;
+  }
+
+  header .head a:after {
+    content: "";
+    position: absolute;
+    background: #CCCCCC;
+    width: 1px;
+    height: 17px;
+    left: 5rem;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav img {
+    width: 12%;
+    margin-left: 50px;
+  }
+
+  header nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul li {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+
+  header nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+    cursor: pointer;
+  }
+
+  header nav ul li.hover {
+    border-bottom: 4px solid #00CC99;
+  }
+
+  header nav ul li .dropDown {
+    background: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 105%;
+    display: none;
+  }
+
+  .wrap {
+    display: flex;
+    margin: 40px 2%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 28%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 2%;
+    box-shadow: 3px 3px 20px rgb(0 0 0 / 20%);
+  }
+
+ .box img {
+    width: 35%;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  .box h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .box p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  .box p > ol {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    line-height: 3rem;
+  }
+
+  table {
+    width: 90%;
+    margin: auto;
+  }
+  
+  table td, table th {
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+  }
+  
+  table thead {
+    background-color: #F7F7F7;
+    text-align: left;
+  }
+
+  table .green {
+    color:#00A67D;
+  }
+
+  .form {
+    background: linear-gradient(180deg, #00644B, #009872);
+    padding: 20px 50px 50px 50px;
+    margin-top: 50px;
+  }
+
+  .form > .title {
+    color: white;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .form .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .form .content textarea, .form .content .right {
+    width: 45%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .form .content .right p {
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .form .content .right label {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .form .content .right input {
+    width: 100%;
+    height: 25px;
+  }
+
+  .form .content .right .button-submit {
+    background: #00CC99;
+    width: 90px;
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+
+  footer img {
+    height: 100%;
+  }
+
+  footer p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+
+  footer p > span {
+    color: #E12D80;
+  }
