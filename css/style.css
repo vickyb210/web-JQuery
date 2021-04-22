@@ -283,6 +283,7 @@ a {
     height: 50px;
     color: white;
     cursor: pointer;
+    z-index: 3;
 }
 
 .top a {
